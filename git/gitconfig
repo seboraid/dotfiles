@@ -51,11 +51,11 @@
         poh = push origin head
 
         # Stash
-        st = stash
-        stp = stash pop
+        #st = stash
+        #stp = stash pop
 
         # Status/Logging
-        s = status
+        st = status
         ss = status -sb
         hist = log --graph --pretty=custom           # Show custom graph
         l = log --pretty=custom                      # Show custom log
