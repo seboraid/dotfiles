@@ -1,9 +1,9 @@
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa_mercadoni
-ssh-add ~/.ssh/id_rsa
+#eval "$(ssh-agent -s)"
+#ssh-add ~/.ssh/id_rsa_mercadoni
+#ssh-add ~/.ssh/id_rsa
 
 # Directories to be prepended to $PATH
 declare -a dirs_to_prepend
