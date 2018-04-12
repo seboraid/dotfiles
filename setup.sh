@@ -256,15 +256,15 @@ main() {
   unset BINARIES
 
   # Symlink online-check.sh
-  ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
+# ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
 
   # Write out current crontab
-  crontab -l > mycron
+#  crontab -l > mycron
   # Echo new cron into cron file
-  echo "* * * * * ~/online-check.sh" >> mycron
+#  echo "* * * * * ~/online-check.sh" >> mycron
   # Install new cron file
-  crontab mycron
-  rm mycron
+#  crontab mycron
+#  rm mycron
 
 }
 
@@ -303,15 +303,15 @@ install_zsh () {
 
 # Package managers & packages
 
-# . "$DOTFILES_DIR/install/brew.sh"
-# . "$DOTFILES_DIR/install/npm.sh"
+ . "$DOTFILES_DIR/install/brew.sh"
+ . "$DOTFILES_DIR/install/npm.sh"
 
-# if [ "$(uname)" == "Darwin" ]; then
-    # . "$DOTFILES_DIR/install/brew-cask.sh"
-# fi
+if [ "$(uname)" == "Darwin" ]; then
+    . "$DOTFILES_DIR/install/brew-cask.sh"
+fi
 
 main
-# install_zsh
+install_zsh
 
 ###############################################################################
 # Atom                                                                        #

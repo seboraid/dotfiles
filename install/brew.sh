@@ -72,6 +72,7 @@ apps=(
     ffmpeg --with-libvpx
     wget
     wifi-password
+    nodenv
 )
 
 brew install "${apps[@]}"

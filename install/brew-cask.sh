@@ -6,38 +6,51 @@ brew install brew-cask
 brew tap caskroom/versions
 
 # Install packages
+# apps=(
+#     1password
+#     gyazo
+#     dropbox
+#     google-drive
+#     spectacle
+#     flux
+#     dash
+#     imagealpha
+#     imageoptim
+#     evernote
+#     iterm2
+#     atom
+#     webstorm
+#     firefox
+#     firefoxnightly
+#     google-chrome
+#     google-chrome-canary
+#     malwarebytes-anti-malware
+#     glimmerblocker
+#     hammerspoon
+#     kaleidoscope
+#     macdown
+#     opera
+#     screenflow
+#     spotify
+#     skype
+#     slack
+#     tower
+#     transmit
+#     elmedia-player
+#     utorrent
+# )
+
 apps=(
-    1password
-    gyazo
-    dropbox
-    google-drive
-    spectacle
-    flux
-    dash
-    imagealpha
-    imageoptim
+    google-backup-and-sync
     evernote
     iterm2
-    atom
-    webstorm
+    visual-studio-code
     firefox
-    firefoxnightly
     google-chrome
-    google-chrome-canary
-    malwarebytes-anti-malware
-    glimmerblocker
-    hammerspoon
-    kaleidoscope
-    macdown
-    opera
-    screenflow
+    malwarebytes
     spotify
-    skype
     slack
     tower
-    transmit
-    elmedia-player
-    utorrent
 )
 
 brew cask install "${apps[@]}"
