@@ -161,11 +161,11 @@ echo "done"
 #
 
 
-# Atom editor settings
-echo -n "Copying Atom settings.."
-mv -f ~/.atom ~/dotfiles_old/
-ln -s $HOME/dotfiles/atom ~/.atom
-echo "done"
+# # Atom editor settings
+# echo -n "Copying Atom settings.."
+# mv -f ~/.atom ~/dotfiles_old/
+# ln -s $HOME/dotfiles/atom ~/.atom
+# echo "done"
 
 
 declare -a FILES_TO_SYMLINK=(
@@ -174,9 +174,7 @@ declare -a FILES_TO_SYMLINK=(
   'shell/shell_config'
   'shell/shell_exports'
   'shell/shell_functions'
-  'shell/bash_profile'
-  'shell/bash_prompt'
-  'shell/bashrc'
+  
   'shell/zshrc'
   'shell/ackrc'
   'shell/curlrc'
@@ -256,15 +254,15 @@ main() {
   unset BINARIES
 
   # Symlink online-check.sh
-# ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
+  #ln -fs $HOME/dotfiles/lib/online-check.sh $HOME/online-check.sh
 
   # Write out current crontab
-#  crontab -l > mycron
+  #crontab -l > mycron
   # Echo new cron into cron file
-#  echo "* * * * * ~/online-check.sh" >> mycron
+  #echo "* * * * * ~/online-check.sh" >> mycron
   # Install new cron file
-#  crontab mycron
-#  rm mycron
+  #crontab mycron
+  #rm mycron
 
 }
 
@@ -303,8 +301,9 @@ install_zsh () {
 
 # Package managers & packages
 
- . "$DOTFILES_DIR/install/brew.sh"
- . "$DOTFILES_DIR/install/npm.sh"
+. "$DOTFILES_DIR/install/brew.sh"
+#. "$DOTFILES_DIR/install/npm.sh"
+. "$DOTFILES_DIR/install/nodenv.sh"
 
 if [ "$(uname)" == "Darwin" ]; then
     . "$DOTFILES_DIR/install/brew-cask.sh"
@@ -329,7 +328,7 @@ install_zsh
 ###############################################################################
 
 # Install Zsh settings
-ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
+#ln -s ~/dotfiles/zsh/themes/nick.zsh-theme $HOME/.oh-my-zsh/themes
 
 
 ###############################################################################

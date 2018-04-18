@@ -47,10 +47,13 @@ apps=(
     visual-studio-code
     firefox
     google-chrome
-    malwarebytes
+    whatsapp
     spotify
     slack
     tower
+    caffeine
+    android-studio
+    tunnelbrick
 )
 
 brew cask install "${apps[@]}"
