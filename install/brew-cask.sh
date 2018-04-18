@@ -53,7 +53,7 @@ apps=(
     tower
     caffeine
     android-studio
-    tunnelbrick
+    tunnelblick
 )
 
 brew cask install "${apps[@]}"
