@@ -49,9 +49,6 @@ apps=(
     coreutils
     moreutils
     findutils
-    lolcat
-    fortune
-    cowsay
     git-extras
     gnu-sed --with-default-names
     the_platinum_searcher

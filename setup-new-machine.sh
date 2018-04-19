@@ -29,7 +29,7 @@ cp ~/.gitconfig.local ~/migration
 cp ~/.z ~/migration # z history file.
 
 # sublime text settings
-cp "~/Library/Application Support/Sublime Text 3/Packages" ~/migration
+#cp "~/Library/Application Support/Sublime Text 3/Packages" ~/migration
 
 
 # iTerm settings.
@@ -88,12 +88,12 @@ $HOME/dotfiles/install/brew-cask.sh
 # Node                                                                        #
 ###############################################################################
 
-$HOME/dotfiles/install/npm.sh
+$HOME/dotfiles/install/nodenv.sh
 
 # Type `git open` to open the GitHub page or website for a repository.
-npm install -g git-open
+#npm install -g git-open
 # trash as the safe `rm` alternative
-npm install -g trash-cli
+#npm install -g trash-cli
 
 
 ###############################################################################
@@ -102,7 +102,7 @@ npm install -g trash-cli
 
 # github.com/jamiew/git-friendly
 # the `push` command which copies the github compare URL to my clipboard is heaven
-bash < <( curl https://raw.githubusercontent.com/jamiew/git-friendly/master/install.sh)
+#bash < <( curl https://raw.githubusercontent.com/jamiew/git-friendly/master/install.sh)
 
 
 ###############################################################################
@@ -112,8 +112,8 @@ bash < <( curl https://raw.githubusercontent.com/jamiew/git-friendly/master/inst
 # github.com/rupa/z - hooked up in .zshrc
 # consider reusing your current .z file if possible. it's painful to rebuild :)
 # or use autojump instead https://github.com/wting/autojump
-git clone https://github.com/rupa/z.git ~/z
-chmod +x ~/z/z.sh
+#git clone https://github.com/rupa/z.git ~/z
+#chmod +x ~/z/z.sh
 
 
 # my magic photobooth symlink -> dropbox. I love it.
@@ -132,7 +132,7 @@ sudo easy_install Pygments
 # Atom                                                                        #
 ###############################################################################
 
-ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
+#ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
 
 
 ###############################################################################
@@ -140,7 +140,7 @@ ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
 # https://github.com/hjuutilainen/dotfiles/blob/master/bin/osx-user-defaults.sh
 ###############################################################################
 
-sh osx/set-defaults.sh
+#sh osx/set-defaults.sh
 
 
 ###############################################################################
