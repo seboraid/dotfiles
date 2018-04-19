@@ -54,6 +54,7 @@ apps=(
     caffeine
     android-studio
     tunnelblick
+    postman
 )
 
 brew cask install "${apps[@]}"
