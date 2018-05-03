@@ -56,6 +56,7 @@ apps=(
     wget
     wifi-password
     diff-so-fancy
+    mongodb@3.2
 )
 
 echo "Installing Homebrew Packages..."

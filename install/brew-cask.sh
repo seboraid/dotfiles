@@ -50,11 +50,11 @@ apps=(
     whatsapp
     spotify
     slack
-    tower
     caffeine
     android-studio
     tunnelblick
     postman
+    psequel
 )
 
 brew cask install "${apps[@]}"
