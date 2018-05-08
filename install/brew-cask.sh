@@ -55,6 +55,7 @@ apps=(
     tunnelblick
     postman
     psequel
+    docker
 )
 
 brew cask install "${apps[@]}"
