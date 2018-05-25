@@ -114,3 +114,4 @@ eval "$(nodenv init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+export PATH="/Users/seboraid/Library/Python/2.7/bin:$PATH"

@@ -57,6 +57,7 @@ apps=(
     wifi-password
     diff-so-fancy
     mongodb@3.2
+    telnet
 )
 
 echo "Installing Homebrew Packages..."
