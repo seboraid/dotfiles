@@ -58,6 +58,7 @@ apps=(
     diff-so-fancy
     mongodb@3.2
     telnet
+    awscli
 )
 
 echo "Installing Homebrew Packages..."

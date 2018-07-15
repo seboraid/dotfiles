@@ -41,6 +41,7 @@ brew tap caskroom/versions
 # )
 
 apps=(
+    java8
     google-backup-and-sync
     evernote
     iterm2
