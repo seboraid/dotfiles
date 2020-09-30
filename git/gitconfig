@@ -5,7 +5,7 @@
         aa = add --all
 
         # Branch
-        br = branch
+	br = branch
         branch-name = rev-parse --abbrev-ref HEAD
         branch-diff = diff master...HEAD
         branch-files = "!git diff master...HEAD --name-status | sed '/^D/d ; s/^.\\s\\+//'"
@@ -25,7 +25,7 @@
         sclone = clone --depth=1
 
         # Checkout
-        co = checkout
+	co = checkout
         cb = checkout -b
 
         # Cherry-pick
@@ -55,7 +55,7 @@
         #stp = stash pop
 
         # Status/Logging
-        st = status
+	st = status
         ss = status -sb
         hist = log --graph --pretty=custom           # Show custom graph
         l = log --pretty=custom                      # Show custom log
@@ -148,6 +148,7 @@
       git tag -d "$1" &> /dev/null; \
       git tag $1; \
   }; f"
+	ci = commit
 
   # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -251,6 +252,7 @@
         clean = git lfs clean %f
         smudge = git lfs smudge %f
         required = true
+	process = git-lfs filter-process
 
 [fetch]
         prune = true

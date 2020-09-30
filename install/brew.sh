@@ -47,18 +47,16 @@ apps=(
     node
     nodenv
     coreutils
-    moreutils
-    findutils
-    git-extras
-    gnu-sed --with-default-names
     the_platinum_searcher
     tree
     wget
     wifi-password
     diff-so-fancy
-    mongodb@3.2
-    telnet
     awscli
+    pyenv
+    pyenv-virtualenv
+    mkdocs
+    telnet
 )
 
 echo "Installing Homebrew Packages..."
@@ -69,3 +67,13 @@ echo "Homebrew Packages Installed"
 
 # Remove outdated versions from the cellar
 brew cleanup
+
+###############################################################################
+# Node & Python
+###############################################################################
+
+$HOME/dotfiles/install/nodenv.sh
+$HOME/dotfiles/install/npm.sh
+
+$HOME/dotfiles/install/python.sh
+$HOME/dotfiles/install/pyenv.sh

@@ -11,9 +11,9 @@ then
 
   # Init nodenv
   nodenv init
-  nodenv install 9.5.0
-  nodenv global 9.5.0
-fi
+  nodenv install 14.x-next
+  nodenv global 14.x-next
+
 
 # Globally install with npm
 # To list globally installed npm packages and version: npm list -g --depth=0
@@ -41,8 +41,8 @@ fi
 
 packages=(
     npm-check-updates
-    webpack
     nodemon
 )
 
 npm install -g "${packages[@]}"
+fi

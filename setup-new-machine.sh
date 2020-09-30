@@ -28,13 +28,6 @@ cp ~/.bash_history ~/migration # back it up for fun?
 cp ~/.gitconfig.local ~/migration
 cp ~/.z ~/migration # z history file.
 
-# sublime text settings
-#cp "~/Library/Application Support/Sublime Text 3/Packages" ~/migration
-
-
-# iTerm settings.
-  # Prefs, General, Use settings from Folder
-
 # Finder settings
 
 
@@ -81,19 +74,11 @@ fi
 ###############################################################################
 
 $HOME/dotfiles/install/brew.sh
-$HOME/dotfiles/install/brew-cask.sh
 
+if [ "$(uname)" == "Darwin" ]; then
+   . "$DOTFILES_DIR/install/brew-cask.sh"
+fi
 
-###############################################################################
-# Node                                                                        #
-###############################################################################
-
-$HOME/dotfiles/install/nodenv.sh
-
-# Type `git open` to open the GitHub page or website for a repository.
-#npm install -g git-open
-# trash as the safe `rm` alternative
-#npm install -g trash-cli
 
 
 ###############################################################################
@@ -126,13 +111,6 @@ $HOME/dotfiles/install/nodenv.sh
 
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
-
-
-###############################################################################
-# Atom                                                                        #
-###############################################################################
-
-#ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom
 
 
 ###############################################################################
