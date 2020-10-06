@@ -57,6 +57,7 @@ apps=(
     pyenv-virtualenv
     mkdocs
     telnet
+    ntp
 )
 
 echo "Installing Homebrew Packages..."
