@@ -68,6 +68,21 @@ if ! xcode-select --print-path &> /dev/null; then
 
 fi
 
+###############################################################################
+# Linux Tools                                                                    #
+###############################################################################
+
+
+if [ "$(uname -s)" == "Linux" ]; then
+    if grep -qiE "ubuntu|debian" /etc/*release ; then
+      sudo apt-get install build-essential curl file git
+    fi
+    if grep -qiE "centos|redhat|fedora" /etc/*release ; then
+      sudo yum groupinstall 'Development Tools'
+      sudo yum install curl file git
+      sudo yum install libxcrypt-compat # needed by Fedora 30 and up
+    fi
+fi
 
 ###############################################################################
 # Homebrew                                                                    #

@@ -14,7 +14,7 @@ git config --global alias.st status
 # Directories to be prepended to $PATH
 declare -a dirs_to_prepend
 dirs_to_prepend=(
-  "/usr/bin"
+  "/usr/local/bin"
   "/usr/local/sbin"
   "/usr/local/"
   "/sw/bin/"
@@ -26,7 +26,7 @@ dirs_to_prepend=(
 )
 
 # Explicitly configured $PATH
-PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+PATH="/usr/bin:/bin:/usr/sbin:/sbin"
 
 for dir in ${(k)dirs_to_prepend[@]}
 do
