@@ -49,9 +49,8 @@ apps=(
     firefox
     google-chrome
     brave-browser
+    dbeaver-community
     tor-browser
-    protonvpn
-    discord
     whatsapp
     spotify
     slack
