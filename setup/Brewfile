@@ -1,119 +1,129 @@
-# Taps
-tap "git-friendly/git-friendly"
+tap "aws/tap"
+tap "azure/functions"
+tap "ddev/ddev"
+tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/services"
-tap "jesseduffield/lazydocker"
-tap "jesseduffield/lazygit"
-tap "oven-sh/bun"
-
-# CLI tools
-brew "awscli" # Official Amazon AWS command-line interface
-brew "bat" # Output highlighting (better `cat`)
-brew "eza" # Listing files with info (better `ls`)
-brew "fastfetch" # Show pretty system info
-brew "fd" # Find entries in your filesystem (better `find`)
-brew "fnm" # Node.js version manager
-brew "fzf" # Fuzzy file finder and filtering
-brew "gh" # GitHub CLI: interact with GitHub PRs, issues, repos
-brew "git" # Version control
-brew "git-delta" # Diff pager for `git` and `grep` output (better `diff`)
-brew "htop" # Performance and resource monitoring tool (better `top`)
-brew "node" # Fallback Node.js version
-brew "pnpm" # Efficient Node.js package manager
-brew "prettyping" # Prettier and compact `ping`
-brew "python@3.11" # Required by awscli
-brew "ripgrep" # Searching within files (better `grep`)
-brew "starship" # Prompt manager
-brew "tlrc" # Community-maintained docs (better `man`)
-brew "trash-cli" # Record and restore removed files (better `rm`)
-brew "webp" # More efficient web images
-brew "zoxide" # Convenient and majical navigation (better `cd`)
-brew "zsh" # A shell of choice
-brew "zsh-autosuggestions" # Fish-like autosuggestions for Zsh
-brew "zsh-syntax-highlighting" # Fish-like syntax highlighting for Zsh
-brew "git-friendly/git-friendly/git-friendly" # Improved Git commands for common tasks
-brew "jesseduffield/lazydocker/lazydocker" # Full Docker management app
-brew "jesseduffield/lazygit/lazygit" # Full Git management app
-brew "oven-sh/bun/bun" # Bun runtime
-
-# Temporarily required for some work projects
-brew "libpng"
-brew "cairo"
-brew "giflib"
-brew "jpeg"
-brew "pango"
-brew "librsvg"
-brew "pkg-config"
-
-# Fonts
-cask "font-symbols-only-nerd-font"
-
-# GUI apps
-cask "1password" # Password manager
-cask "adobe-creative-cloud" # Adobe Photoshop & Lightroom
-cask "bruno" # Local-first API client
-cask "cleanshot" # Annotated screenshots & quick videos
-cask "coteditor" # Simple code/text editor
-cask "dash" # API documentation reader
-cask "firefox@developer-edition" # Dev tools for web dev work
-cask "ghostty" # Better terminal emulator
-cask "github" # GitHub Desktop GUI
-cask "hazeover" # Fades out inactive windows
-cask "hyperkey" # Enables mapping hyper key to the caps lock key
-cask "itsycal" # Tiny popup calendar in a menu bar
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "buo/cask-upgrade"
+tap "homebrew/cask-fonts"
+brew "apktool"
+brew "aws-sam-cli"
+brew "awscli"
+brew "cocoapods"
+brew "coreutils"
+brew "docker-compose"
+brew "gnupg"
+brew "jq"
+brew "lima"
+brew "mas"
+brew "nvm"
+brew "pkgconf"
+brew "qemu"
+brew "sdl2"
+brew "wget"
+brew "azure/functions/azure-functions-core-tools@4"
+cask "1password"
+cask "1password-cli"
+cask "adobe-acrobat-reader"
+cask "amazon-q"
+cask "android-studio"
+cask "aws-vpn-client"
+cask "chatgpt"
+cask "claude"
+cask "cursor"
+cask "dbngin" # Database versioning tool
+cask "datagrip"
+cask "dataspell"
+cask "docker"
+cask "firefox"
 cask "jordanbaird-ice" # Manage menu bar icons
-cask "keka" # File archiver and extractor
-cask "ledger-live" # Crypto hardware wallet manager
-cask "legcord" # Messaging / Community
+cask "gitkraken"
+cask "gitkraken-cli"
+cask "google-chrome"
+cask "gpg-suite-no-mail"
+cask "iterm2"
+cask "kindle"
+cask "legcord" # Lightweight Discord client (Messaging / Community)
 cask "marta" # File manager
-cask "mimestream" # Email client
-cask "notion" # Note-taking app
-cask "optimage" # Image optimization
+cask "notion"
+cask "notion-calendar"
 cask "orbstack" # Running containerized applications. Ships `docker-compose` as well
-cask "pearcleaner" # Clean up macOS from junk and apps leftovers
-cask "qobuz" # Hi-rez audio streaming platform
-cask "quitter" # Quit apps after periods of inactivity
-cask "raycast" # All-in-one app / tasks launcher
-cask "rectangle" # Window manager
+cask "phpstorm"
+cask "pycharm"
+cask "postman"
+cask "raycast"
 cask "rocket" # Handy emojis picker
-cask "slack" # Messaging social platform
-cask "superduper" # Data backup
 cask "syntax-highlight", args: { no_quarantine: true } # Preview many different source code files
+cask "slack"
+cask "spotify"
+brew "starship" # Prompt manager
 cask "tableplus" # Database managmenent system
-cask "telegram" # Messenger
-cask "visual-studio-code" # Code editor
+#cask "temurin@11"
+cask "visual-studio-code"
+cask "warp"
+cask "windsurf"
 cask "vivaldi", args: { no_quarantine: true } # Browser with built-in privacy
+cask "whatsapp"
 
-# VS Code extensions
-vscode "astro-build.astro-vscode"
+vscode "1password.op-vscode"
+vscode "amazonwebservices.amazon-q-vscode"
+vscode "amazonwebservices.aws-toolkit-vscode"
+vscode "amazonwebservices.codewhisperer-for-command-line-companion"
+vscode "atlassian.atlascode"
 vscode "bierner.markdown-preview-github-styles"
-vscode "bradlc.vscode-tailwindcss"
-vscode "catppuccin.catppuccin-vsc-icons"
-vscode "davidanson.vscode-markdownlint"
+vscode "bmewburn.vscode-intelephense-client"
+vscode "chakrounanas.turbo-console-log"
+vscode "codeium.codeium"
 vscode "dbaeumer.vscode-eslint"
-vscode "deerawan.vscode-dash"
-vscode "editorconfig.editorconfig"
+vscode "dotjoshjohnson.xml"
+vscode "eamodio.gitlens"
 vscode "esbenp.prettier-vscode"
-vscode "firsttris.vscode-jest-runner"
-vscode "github.vscode-pull-request-github"
-vscode "graphql.vscode-graphql-syntax"
-vscode "kisstkondoros.vscode-gutter-preview"
-vscode "meganrogge.template-string-converter"
+vscode "fivethree.vscode-ionic-snippets"
+vscode "formulahendry.auto-rename-tag"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-github-actions"
+vscode "hashicorp.terraform"
+vscode "ilich8086.untabify"
+vscode "ionic.ionic"
+vscode "jheilingbrunner.vscode-gnupg-tool"
+vscode "leizongmin.node-module-intellisense"
+vscode "mechatroner.rainbow-csv"
+vscode "miguelsolorio.symbols"
+vscode "ms-azuretools.vscode-azure-github-copilot"
+vscode "ms-azuretools.vscode-azurefunctions"
+vscode "ms-azuretools.vscode-azureresourcegroups"
 vscode "ms-azuretools.vscode-docker"
-vscode "ms-vscode.node-debug2"
-vscode "naumovs.color-highlight"
-vscode "orta.vscode-twoslash-queries"
-vscode "prisma.prisma"
+vscode "ms-dotnettools.csdevkit"
+vscode "ms-dotnettools.csharp"
+vscode "ms-dotnettools.dotnet-interactive-vscode"
+vscode "ms-dotnettools.vscode-dotnet-pack"
+vscode "ms-dotnettools.vscode-dotnet-runtime"
+vscode "ms-dotnettools.vscode-dotnet-sdk"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.makefile-tools"
+vscode "openai.openai-chatgpt-adhoc"
 vscode "redhat.vscode-yaml"
-vscode "sapegin.emoji-console-log"
-vscode "sapegin.just-blame"
-vscode "sapegin.mini-markdown"
-vscode "sapegin.theme-squirrelsonglight"
-vscode "sapegin.todo-tomorrow"
-vscode "sleistner.vscode-fileutils"
+vscode "rust-lang.rust-analyzer"
 vscode "sonarsource.sonarlint-vscode"
-vscode "sourcegraph.cody-ai"
-vscode "stkb.rewrap"
-vscode "streetsidesoftware.code-spell-checker"
-vscode "tekumara.typos-vscode"
-vscode "usernamehw.errorlens"
+vscode "swordev.phpstan"
+vscode "vncz.vscode-apielements"
+vscode "wayou.vscode-todo-highlight"
+vscode "xdebug.php-debug"
+vscode "zhuangtongfa.material-theme"
+mas "Amphetamine", id: 937984704
+mas "Xcode", id: 497799835
+mas "1Password for Safari", id: 1569813296
+mas "Email", id: 1489591003
+mas "Perplexity", id: 6714467650
+mas "bear-markdown-notes", id:id1091189122
+mas "CotEditor", id: 1024640650

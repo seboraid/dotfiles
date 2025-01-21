@@ -31,24 +31,24 @@ title "Installing software..."
 brew bundle --file=./setup/Brewfile | indent
 
 # Extra apps
-echo ""
-title "☕️ Install more apps if you need them:"
-echo "brew install --cask daisydisk"
-echo "brew install --cask dbngin"
-echo "brew install --cask figma"
-echo "brew install --cask ibkr"
-echo "brew install --cask zoom"
-echo "${bold}Contrast${reset} − https://github.com/soffes/contrast"
-echo "${bold}Audirvāna Origin${reset} − https://audirvana.com/audirvana-origin/"
+# echo ""
+# title "☕️ Install more apps if you need them:"
+# echo "brew install --cask daisydisk"
+# echo "brew install --cask dbngin"
+# echo "brew install --cask figma"
+# echo "brew install --cask ibkr"
+# echo "brew install --cask zoom"
+# echo "${bold}Contrast${reset} − https://github.com/soffes/contrast"
+# echo "${bold}Audirvāna Origin${reset} − https://audirvana.com/audirvana-origin/"
 
 # App Store apps
-echo ""
-title "🍏 Install additional apps from App Store:"
-echo "https://apps.apple.com/us/app/bear-markdown-notes/id1091189122?mt=12"
-echo "https://apps.apple.com/us/app/colorslurp/id1287239339"
-echo "https://apps.apple.com/us/app/klack/id6446206067?mt=12"
-echo "https://apps.apple.com/us/app/tadam/id531349534?mt=12"
-echo "https://apps.apple.com/us/app/things-3/id904280696?mt=12"
+# echo ""
+# title "🍏 Install additional apps from App Store:"
+# echo "https://apps.apple.com/us/app/bear-markdown-notes/id1091189122?mt=12"
+# echo "https://apps.apple.com/us/app/colorslurp/id1287239339"
+# echo "https://apps.apple.com/us/app/klack/id6446206067?mt=12"
+# echo "https://apps.apple.com/us/app/tadam/id531349534?mt=12"
+# echo "https://apps.apple.com/us/app/things-3/id904280696?mt=12"
 
 # Remove outdated versions of formulae and casks from the cellar
 # Besides, this will run `brew autoremove` to remove all the hanging, no longer needed packages

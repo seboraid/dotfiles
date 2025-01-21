@@ -1,8 +1,8 @@
-# ~nicksp 🌮
+# ~seboraid 🌮
 
 My personal dotfiles for configuring macOS with Zsh and Homebrew.
 
-![nicksp terminal](screenshot.png)
+![seboraid terminal](screenshot.png)
 
 > [!IMPORTANT]
 > Please only open pull requests that fix bugs or add improvements without any breaking changes.
@@ -53,7 +53,7 @@ My personal dotfiles for configuring macOS with Zsh and Homebrew.
 ### Manually
 
 ```shell
-git clone git@github.com:nicksp/dotfiles.git ~/dotfiles
+git clone git@github.com:seboraid/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ./setup/zsh.sh
 ./setup/brew.sh
@@ -69,7 +69,7 @@ To automate the setup of your dotfiles on a new machine, use the [setup](./setup
 > Use at your own risk!
 
 ```shell
-git clone git@github.com:nicksp/dotfiles.git ~/dotfiles
+git clone git@github.com:seboraid/dotfiles.git ~/dotfiles
 ~/dotfiles/setup.sh
 ```
 
