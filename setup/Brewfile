@@ -38,6 +38,7 @@ cask "dataspell"
 cask "docker"
 cask "firefox"
 cask "jordanbaird-ice" # Manage menu bar icons
+cask "gather" # Organize your workspace
 cask "gitkraken"
 cask "gitkraken-cli"
 cask "google-chrome"
