@@ -1,12 +1,9 @@
 tap "aws/tap"
 tap "azure/functions"
+tap "buo/cask-upgrade"
 tap "ddev/ddev"
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "buo/cask-upgrade"
-tap "homebrew/cask-fonts"
 brew "apktool"
 brew "aws-sam-cli"
 brew "awscli"
@@ -21,6 +18,7 @@ brew "nvm"
 brew "pkgconf"
 brew "qemu"
 brew "sdl2"
+brew "starship"
 brew "wget"
 brew "azure/functions/azure-functions-core-tools@4"
 cask "1password"
@@ -28,49 +26,48 @@ cask "1password-cli"
 cask "adobe-acrobat-reader"
 cask "amazon-q"
 cask "android-studio"
-#cask "aws-vpn-client"
 cask "chatgpt"
 cask "claude"
 cask "cursor"
-cask "dbngin" # Database versioning tool
 cask "datagrip"
 cask "dataspell"
+cask "dbngin"
 cask "docker"
 cask "firefox"
-cask "jordanbaird-ice" # Manage menu bar icons
-cask "gather" # Organize your workspace
+cask "gather"
 cask "gitkraken"
 cask "gitkraken-cli"
 cask "google-chrome"
 cask "gpg-suite-no-mail"
 cask "iterm2"
-cask "kindle"
-cask "legcord" # Lightweight Discord client (Messaging / Community)
-cask "marta" # File manager
+cask "jordanbaird-ice"
+cask "legcord"
+cask "marta"
 cask "notion"
 cask "notion-calendar"
-cask "orbstack" # Running containerized applications. Ships `docker-compose` as well
+cask "orbstack"
 cask "phpstorm"
-cask "pycharm"
 cask "postman"
+cask "pycharm"
 cask "raycast"
-cask "rocket" # Handy emojis picker
-cask "syntax-highlight", args: { no_quarantine: true } # Preview many different source code files
+cask "rocket"
 cask "slack"
 cask "spotify"
-brew "starship" # Prompt manager
-cask "tableplus" # Database managmenent system
-#cask "temurin@11"
+cask "syntax-highlight"
 cask "visual-studio-code"
+cask "vivaldi"
 cask "warp"
-cask "windsurf"
-cask "vivaldi", args: { no_quarantine: true } # Browser with built-in privacy
 cask "whatsapp"
-
+cask "windsurf"
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "Bear", id: 1091189122
+mas "CotEditor", id: 1024640650
+mas "Perplexity", id: 6714467650
+mas "Xcode", id: 497799835
 vscode "1password.op-vscode"
 vscode "amazonwebservices.amazon-q-vscode"
 vscode "amazonwebservices.aws-toolkit-vscode"
-vscode "amazonwebservices.codewhisperer-for-command-line-companion"
 vscode "atlassian.atlascode"
 vscode "bierner.markdown-preview-github-styles"
 vscode "bmewburn.vscode-intelephense-client"
@@ -88,6 +85,7 @@ vscode "github.vscode-github-actions"
 vscode "hashicorp.terraform"
 vscode "ilich8086.untabify"
 vscode "ionic.ionic"
+vscode "ionide.ionide-fsharp"
 vscode "jheilingbrunner.vscode-gnupg-tool"
 vscode "leizongmin.node-module-intellisense"
 vscode "mechatroner.rainbow-csv"
@@ -112,7 +110,6 @@ vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.makefile-tools"
-vscode "openai.openai-chatgpt-adhoc"
 vscode "redhat.vscode-yaml"
 vscode "rust-lang.rust-analyzer"
 vscode "sonarsource.sonarlint-vscode"
@@ -121,10 +118,3 @@ vscode "vncz.vscode-apielements"
 vscode "wayou.vscode-todo-highlight"
 vscode "xdebug.php-debug"
 vscode "zhuangtongfa.material-theme"
-mas "Amphetamine", id: 937984704
-mas "Xcode", id: 497799835
-mas "1Password for Safari", id: 1569813296
-mas "Email", id: 1489591003
-mas "Perplexity", id: 6714467650
-mas "bear-markdown-notes", id: 1091189122
-mas "CotEditor", id: 1024640650
